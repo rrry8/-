@@ -1,6 +1,6 @@
 チームで制作した作品です。
 
-○MagStickクラス
+○MagStickクラス (class/Obj/Unit/Item):磁石の動きや判定等を行っています。
 　関数
 ・GetTrailData　　　　…全て担当
 ・CollMagnet　　　　　…全て担当
@@ -9,22 +9,27 @@
 ・SlowEnemyBullet　　 …全て担当
 ・SetMouseIconPosition…全て担当
 
-○MagStickTrailクラス
+○MagStickTrailクラス (class/Obj/Unit/Item):磁石の軌跡の処理を行っています。
 …全ての箇所担当
 
-○EnemyShootクラス
+○EnemyShootクラス (class/Obj/Unit):弾を発射する敵の処理を実装しています。
 …全ての箇所担当
 
-○Bulletクラス
+○Bulletクラス (class/Obj/Unit/Item):敵が発射する弾の処理を実装しています。
 …全ての箇所担当
 
-○BulletManagerクラス
+○BulletManagerクラス (class/Obj/Unit/Item):Bulletクラスを管理するクラスです。
 …全ての箇所担当
 
-○MouseIconクラス
+○MouseIconクラス (class/UI/mouse):マウスアイコンの処理を行っています。
 …全ての箇所担当
 
-○HLSL
-・PS_CrackedScreen.hlsl…全て担当
-・PS_Distortion.hlsl　 …全て担当
-・PS_MouseIcon.hlsl　　…全て担当
+○HLSL(class/hlsl)
+・PS_CrackedScreen.hlsl:画面割れ
+…全て担当
+
+・PS_Distortion.hlsl:歪み
+…全て担当
+
+・PS_MouseIcon.hlsl:マウスアイコンに動きをつけています。
+…全て担当
