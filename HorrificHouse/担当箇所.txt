@@ -1,0 +1,77 @@
+チーム制作です。
+
+〇GameScene (class/scene):ポストエフェクトのための処理を行っています。
+関数
+Update		…部分的に担当(コード内にて記述。主に被写界深度の定数)
+InitBloomVerts　…全て担当
+DrawBloom　　　	…全て担当
+DrawGaussianBlur…全て担当
+
+○ResultSceneクラス (class/scene):クリア時の画面の処理を行っています。
+…全ての箇所担当
+
+○ResultUIクラス (class/scene/SceneExpansion/UI):クリア画面の一部UIを表示しています。
+関数
+DrawCredit　…全て担当
+UpdateCredit…全て担当
+
+○InventorySceneクラス (class/scene):背景や撮影した写真を描画しています。
+関数
+InitBlur　　　 …全て担当
+InitVerts　　　…全て担当
+CalcBlurWeights…全て担当
+DrawBackGround …全て担当
+DrawPhoto　　　…全て担当
+
+○Playerクラス (class/object/player):移動やダッシュ等の基本的な動作を実装しています。
+関数
+CheckHitFlash…全て担当
+MovePosition …部分的に担当(プロジェクトのコード内にて記述。246~282行目)
+FallPosition …全て担当
+
+○Cameraクラス (class/camera):カメラ回転やダッシュ時の画面揺れを実装しています。
+関数
+UpdateRotateForMouse…全て担当
+SwingWidth　　　　　…全て担当
+
+○Staminaクラス (class/object/player):ダッシュの処理を実装しています。
+…全ての箇所担当
+
+○Enemyクラス (class/object/enemy):移動や経路探索等、敵の処理を実装しています。
+関数
+SearchPlayer　 …大部分担当(サウンド関係のみ別のメンバーが担当)
+DamageFlash　  …大部分担当(サウンド関係のみ別のメンバーが担当)
+HuntPlayer　　 …大部分担当(サウンド関係のみ別のメンバーが担当)
+Search　　　　 …部分的に担当(ギミック関係は別のメンバーが担当)
+MovePosition　 …全て担当
+CheckHitPlayer …全て担当
+RecoverFlash　 …全て担当
+RecoverStanTime…全て担当
+ReduceStanTime …全て担当
+
+○Dijkstraクラス (class/object/enemy):経路探索のダイクストラ法を行っています。
+…全て担当
+
+○Nodeクラス (class/object/enemy):ダイクストラ法に使用するノードです。
+…全て担当
+
+○MinCameraクラス (class/object/player):ゲーム内カメラを構えたときの描画や処理を実装しています。
+FlashCamera　　 …全て担当
+MemoProcess　　 …全て担当
+DrawCameraScreen…全て担当
+
+○HLSL (class/hlsl)
+・ピクセルシェーダ
+GameModel_ps　 …一部担当(コード内にて記述。18~20行目,227~247行目。主に深度の描画部分)
+blur_ps　　　　…全て担当(ガウシアンブラー用)
+Camera_ps　　　…全て担当(ゲーム内カメラの描画用)
+Sea_ps　　　 　…全て担当(クリア画面の海用)
+DepthOfField 　…全て担当(被写界深度用)
+HuntedPlayer_ps…全て担当(敵に追いかけられているときの描画用)
+Luminance_ps　 …全て担当(輝度抽出用)
+Memo_ps　　　　…全て担当(写真を撮影したときの描画用)
+
+・頂点シェーダ
+blurX_vs…全て担当(ガウシアンブラー用)
+blurY_vs…全て担当(ガウシアンブラー用)
+Sea_vs	…全て担当(クリア画面の海用)
