@@ -1,0 +1,28 @@
+○MagStickクラス
+　関数
+・GetTrailData　　　　…全て担当
+・CollMagnet　　　　　…全て担当
+・CollEnemy   　　　　…全て担当
+・SetLineInfo 　　　　…全て担当
+・SlowEnemyBullet　　 …全て担当
+・SetMouseIconPosition…全て担当
+
+○MagStickTrailクラス
+…全ての箇所担当
+
+○EnemyShootクラス
+…全ての箇所担当
+
+○Bulletクラス
+…全ての箇所担当
+
+○BulletManagerクラス
+…全ての箇所担当
+
+○MouseIconクラス
+…全ての箇所担当
+
+○HLSL
+・PS_CrackedScreen.hlsl…全て担当
+・PS_Distortion.hlsl　 …全て担当
+・PS_MouseIcon.hlsl　　…全て担当

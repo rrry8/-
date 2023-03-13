@@ -1,0 +1,8 @@
+Key0 = 17 
+Key1 = 31 
+Key2 = 30 
+Key3 = 32 
+Key4 = 1 
+Key5 = 19 
+Key6 = 57 
+Key7 = 42 

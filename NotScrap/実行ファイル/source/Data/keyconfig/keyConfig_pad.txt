@@ -1,0 +1,14 @@
+Key0 = 8 
+Key1 = 1 
+Key2 = 2 
+Key3 = 4 
+Key4 = 16 
+Key5 = 32 
+Key6 = 64 
+Key7 = 128 
+Key8 = 512 
+Key9 = 256 
+Key10 = 1024 
+Key11 = 2048 
+Key12 = 4096 
+Key13 = 8192 
