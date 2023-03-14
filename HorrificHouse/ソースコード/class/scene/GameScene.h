@@ -106,15 +106,13 @@ private:
     std::unique_ptr<OriginalShader> luminanceShader_;   //輝度抽出シェーダ
 
     //被写界深度用
-    int depthRenderTarget_;
-    int blurRenderTarget_;
-    int highBlurRenderTarget_;
-    Vector3 depthRange_;    //x:中心位置,y,z
+    int depthRenderTarget_;     //深度値
+    int blurRenderTarget_;      //弱ブラー
+    int highBlurRenderTarget_;  //強ブラー
+    float dofRange_;            //被写界深度範囲
+    float dofFocus;             //フォーカス
+    float dofLerp_;             //補間距離
     std::unique_ptr<OriginalShader> depthOfFieldShader_;
-
-    float dofRange_ = 0.0f;
-    float dofFocus = 0.0f;
-    float dofLerp_ = 0.0f;
 
     //エフェクト
     Effect dust_;

@@ -42,7 +42,7 @@ constexpr float CAMERA_ANGLE = 180.0f;
 //”íÊŠE[“xŠÖŒW
 constexpr float DOF_FOCUS_RANGE = 3000.0f;		//”ÍˆÍ
 constexpr float DOF_FOCUS = 3200.0f;			//’†S
-constexpr float DOF_LERP_DISTANCE = 600.0f;	//•âŠÔ‹——£
+constexpr float DOF_LERP_DISTANCE = 400.0f;	//•âŠÔ‹——£
 
 GameScene::GameScene()
 {
